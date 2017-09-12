@@ -25,10 +25,11 @@ func main() {
 	fmt.Println(len(s5),cap(s5))
 
 	s6 :=a[2:5]
-	fmt.Println(s6)
+	fmt.Println(s6,len(s6),cap(s6))
 
+	//slice的cap是原数组的cap-起始位置
 	s7 :=a[3:8]
-	fmt.Println(s7)
+	fmt.Println(s7,len(s7),cap(s7))
 
 	//改变原数组的值，切片中的值随着改变,相反也成立
 	a[6]=100
